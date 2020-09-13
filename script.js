@@ -33,5 +33,7 @@ container.addEventListener("click", (e) => {
     !e.target.classList.contains("occupied")
   ) {
     e.target.classList.toggle("selected");
+
+    updateSelectedCount();
   }
 });
